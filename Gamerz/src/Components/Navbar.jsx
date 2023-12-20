@@ -11,8 +11,8 @@ const Navbar = () => {
       <div className="nav-links">
         <Link to="/">Home</Link>
         <Link to="/products">Products</Link>
-        <Link to="/about">About Us</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/AboutUs">About Us</Link>
+        <Link to="/Contact">Contact</Link>
       </div>
       <div className="search-bar">
         {/* Include your search bar component here */}
