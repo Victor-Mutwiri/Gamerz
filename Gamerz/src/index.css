@@ -1,68 +1,100 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#root {
+  background-color: #f0f0f0;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+*, *:before, *:after {
+  box-sizing: border-box;
 }
 
 body {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
   margin: 0;
+  padding: 0;
+}
+
+/* Navbar.css */
+
+nav {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.nav-links a,
+.user-actions a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1rem;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.nav-links a:hover,
+.user-actions a:hover {
+  text-decoration: underline;
 }
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end; /* Align items to the bottom */
+  min-height: 7vh; /* Set minimum height to full viewport height */
+}
+
+.footer-column {
+  margin-bottom: 20px;
+}
+
+.footer h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 5px;
+}
+
+.footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Style the links when hovered */
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icon {
+  margin-right: 10px;
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+
