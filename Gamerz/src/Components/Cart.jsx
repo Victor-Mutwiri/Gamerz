@@ -1,5 +1,6 @@
 // components/Cart.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Cart = ({ cartItems, onCheckout }) => {
   return (
@@ -13,7 +14,9 @@ const Cart = ({ cartItems, onCheckout }) => {
         ))}
       </ul>
       <p>Total: ${calculateTotal(cartItems).toFixed(2)}</p>
-      <button onClick={onCheckout}>Proceed to Checkout</button>
+      <Link to="/checkout">
+        <button>Proceed to Checkout</button>
+      </Link>
     </div>
   );
 };

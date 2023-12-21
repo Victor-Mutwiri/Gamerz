@@ -15,14 +15,13 @@ const ShoppingCart = () => {
   const handleCheckout = () => {
     // Implement your checkout logic here
     console.log('Proceeding to checkout...');
+    navigate('/checkout');
   };
 
   return (
     <>
-      <Navbar />
       <div>This is the cart page</div>
       <Cart cartItems={cartItems} onCheckout={handleCheckout} />
-      <Footer />
     </>
   );
 };
